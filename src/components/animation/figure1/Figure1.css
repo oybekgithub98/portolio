@@ -1,0 +1,32 @@
+.figure1 {
+    width: 300px;
+    height: 100px;
+    border: 1px solid red;
+}
+.home_animation {
+    width: 300px;
+    height: 60px;
+    margin-left: 40vh;
+    position: relative;
+}
+
+.animate {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 20px solid coral;
+    position: absolute;
+    left: 0;
+    top: -60px;
+    animation: mymove 8s infinite linear forwards;
+}
+
+@keyframes mymove {
+    0% {
+        left: 0px;
+    }
+
+    50% {
+        left: 180px;
+    }
+}

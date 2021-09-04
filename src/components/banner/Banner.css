@@ -1,0 +1,56 @@
+.banner {
+    width: 100%;
+    background-color: rgb(53,53,53);
+    color: rgba(255, 255, 255, 0.89);
+    margin-top: 60px;
+    overflow: hidden;
+}
+
+.banner_wrapper {
+    width: 95%;
+    margin-left: 70px;
+    z-index: 9;
+    /* border: 1px solid rgb(31, 184, 120) !important; */
+}
+
+
+/*RESPONSIVE*/
+@media screen and (max-width: 1200px){
+    
+}
+@media screen and (max-width: 1024px){
+    
+}
+@media screen and (max-width: 976px){
+    
+}
+@media screen and (max-width: 767px){
+   
+}
+@media screen and (max-width: 501px){
+   
+}
+@media screen and (max-width: 460px){
+   
+}
+@media screen and (max-width: 400px){
+    
+}
+@media screen and (max-width: 370px){
+    
+}
+@media (min-width: 300px) and (max-width: 330px){
+    .banner {
+        width: 100%;
+        background-color: rgb(53,53,53);
+        color: rgba(255, 255, 255, 0.89);
+        margin-top: 60px;
+        overflow: hidden;
+    }
+    
+    .banner_wrapper {
+        width: 98%;
+        margin-left: 70px;
+        z-index: 9;
+    }
+}
