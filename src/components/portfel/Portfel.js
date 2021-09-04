@@ -41,7 +41,7 @@ const Portfel = () => {
                     </div>
                 </div>
                 
-                <div className={classes.portfolio_card1}>
+                <div className={classes.portfolio_card2}>
                     <img src={Quran} alt="" />
                     <div className={classes.card_overlay}>
                         <h4>This project was built using HTML SCSS and React JS</h4>
@@ -56,7 +56,7 @@ const Portfel = () => {
                 </div>
             </div>
             <div className={classes.portfolio_box}>
-                <div className={classes.portfolio_card2}>
+                <div className={classes.portfolio_card1}>
                     <img src={City} alt="" />
                     <div className={classes.card_overlay}>
                         <h4>This project was built using HTML and CSS</h4>
