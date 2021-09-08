@@ -3,7 +3,7 @@ import Figure1 from '../animation/figure1/Figure1';
 import Figure2 from '../animation/figure2/Figure2';
 import TypingEffect from 'new-react-typing-effect';
 import homeImage from '../../assets/f934535398f235346dbe6466790a913f.jpg';
-import { FaCog } from 'react-icons/fa';
+// import { FaCog } from 'react-icons/fa';
 import { FiSun } from 'react-icons/fi';
 import './Home.css';
 
