@@ -16,7 +16,7 @@ const Contact = () => {
                         <input type="text" placeholder="Last Name" required />
                         <input type="email" placeholder="Email" required />
                         <input type="password" placeholder="Password" required />
-                        <textarea name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
+                        <textarea placeholder="Message"></textarea>
                     </form>
                     <button type="submit">Send Massage</button>
                 </div>
