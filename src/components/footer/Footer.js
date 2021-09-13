@@ -21,14 +21,14 @@ const Footer = () => {
 
 
     // OpenButton function
-    const OpenButton = (e) => {
-        const open_icons = document.querySelector('.fahome1');
+    // const OpenButton = (e) => {
+    //     const open_icons = document.querySelector('.fahome1');
 
-        if (buttonOpen) {
-            open_icons.classList.add('activeButton')
-            setButtonOpen(false);
-        } 
-    }
+    //     if (buttonOpen) {
+    //         open_icons.classList.add('activeButton')
+    //         setButtonOpen(false);
+    //     } 
+    // }
 
     return (
         <div className={classes.footer}>
@@ -50,7 +50,7 @@ const Footer = () => {
                 <div className={classes.copy_right}>
                     <h3>{time}</h3>
                 </div>
-                <div className={classes.open_button}>
+                {/* <div className={classes.open_button}>
                     <div className={classes.fa_home} onClick={OpenButton} ><FaHome style={{ fontSize: "40px" }} /></div>
                     <div className={classes.open_icons}>
                         <FaHome className={classes.fahome1} />
@@ -58,7 +58,7 @@ const Footer = () => {
                         <FaHome className={classes.fahome3} />
                         <FaHome className={classes.fahome4} />
                     </div>
-                </div>
+                </div> */}
             </div>
         </div>
     )
