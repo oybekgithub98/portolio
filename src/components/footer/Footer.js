@@ -1,10 +1,8 @@
 import React, { useState } from 'react';
 import classes from './Footer.module.css';
-import { FaTelegram, FaWhatsapp, FaHome, FaInstagram, FaTwitter } from 'react-icons/fa';
+import { FaTelegram, FaWhatsapp, FaInstagram, FaTwitter } from 'react-icons/fa';
 
 const Footer = () => {
-
-    const [buttonOpen, setButtonOpen] = useState(false);
 
     // clock function
     let time = new Date().toLocaleString();
@@ -18,17 +16,6 @@ const Footer = () => {
     }
 
     setInterval(UpDataTime, 1000);
-
-
-    // OpenButton function
-    // const OpenButton = (e) => {
-    //     const open_icons = document.querySelector('.fahome1');
-
-    //     if (buttonOpen) {
-    //         open_icons.classList.add('activeButton')
-    //         setButtonOpen(false);
-    //     } 
-    // }
 
     return (
         <div className={classes.footer}>
@@ -50,15 +37,6 @@ const Footer = () => {
                 <div className={classes.copy_right}>
                     <h3>{time}</h3>
                 </div>
-                {/* <div className={classes.open_button}>
-                    <div className={classes.fa_home} onClick={OpenButton} ><FaHome style={{ fontSize: "40px" }} /></div>
-                    <div className={classes.open_icons}>
-                        <FaHome className={classes.fahome1} />
-                        <FaHome className={classes.fahome2} />
-                        <FaHome className={classes.fahome3} />
-                        <FaHome className={classes.fahome4} />
-                    </div>
-                </div> */}
             </div>
         </div>
     )

@@ -3,7 +3,6 @@ import './Default.css';
 import Header from '../components/header/Header';
 import SidebarLeft from '../components/sidebar/SidebarLeft';
 import Banner from '../components/banner/Banner';
-// import SidebarRight from '../components/sidebar/SidebarRight';
 
 const Default = () => {
 
@@ -13,15 +12,18 @@ const Default = () => {
     const openMenu = (e) => {
 
         const sidebar = document.querySelector('.sidebar_menu');
+        const sidebar_menu_light = document.querySelector('.sidebar_menu_light');
 
         if (!menuOpen) {
             sidebar.classList.add('activeMenu');
+            // sidebar_menu_light.classList.add('activeMenuLight');
             setMenuOpen(true);
         } else {
             sidebar.classList.remove('activeMenu');
+            // sidebar_menu_light.classList.remove('activeMenuLight');
             setMenuOpen(false);
         }
-
+        
         let x;
         x = document.querySelectorAll(".menu");
 
@@ -40,9 +42,8 @@ const Default = () => {
         <div>
             <Header menu={openMenu} />
             <div className="default_banner">
-                <SidebarLeft openMenu={openMenu} />
+                <SidebarLeft />
                 <Banner />
-                {/* <SidebarRight /> */}
             </div>
         </div>
     )

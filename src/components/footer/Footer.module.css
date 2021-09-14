@@ -17,6 +17,7 @@
     width: 33%;
     display: flex;
     align-items: center;
+    justify-content: center;
     height: 14vh;
 }
 
@@ -26,12 +27,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.open_button {
-    width: 33%;
-    height: 14vh;
-    position: relative;
 }
 
 .teleg {
@@ -111,70 +106,6 @@
     margin-right: 20px;
 }
 
-.fa_home {
-    width: 70px;
-    height: 70px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    position: absolute;
-    right: 0;
-    top: 0;
-    box-shadow: -3px -3px 3px rgba(255,255,255, 0.1), 3px 3px 3px rgba(0,0,0,0.8);
-}
-
-.open_icons {
-    position: relative;
-    left: 0vh;
-    top: 0vh;
-    display: block;
-}
-
-.activeButton {
-    display: none;
-   
-}
-
-.fahome1 {
-    color: red;
-    transform: translateX(183px) translateY(14px);
-    width: 40px;
-    height: 40px;
-    background-color: brown;
-    border-radius: 50%;
-    padding: 7px;
-}
-
-.fahome2 {
-    transform: translateX(161px) translateY(-49px);
-    color: rgb(111, 0, 255);
-    width: 40px;
-    height: 40px;
-    background-color: brown;
-    border-radius: 50%;
-    padding: 7px;
-}
-
-.fahome3 {
-    color: yellow;
-    width: 40px;
-    height: 40px;
-    transform: translateX(172px) translateY(-92px);
-    background-color: brown;
-    border-radius: 50%;
-    padding: 7px;
-}
-
-.fahome4 {
-    color: rgb(48, 99, 65);
-    width: 40px;
-    height: 40px;
-    transform: translateX(195px) translateY(-100px);
-    background-color: brown;
-    border-radius: 50%;
-    padding: 7px;
-}
 
 
 /*RESPONSIVE*/
@@ -211,12 +142,6 @@
         display: flex;
         justify-content: center;
         align-items: center;
-    }
-    
-    .open_button {
-        width: 33%;
-        height: 14vh;
-        position: relative;
     }
     
     .teleg {
@@ -322,12 +247,6 @@
         display: flex;
         justify-content: center;
         align-items: center;
-    }
-    
-    .open_button {
-        width: 33%;
-        height: 14vh;
-        position: relative;
     }
     
     .teleg {
@@ -438,10 +357,6 @@
         align-items: center;
     }
     
-    .open_button {
-        display: none;
-    }
-    
     .teleg {
         color: 	rgb(0, 136, 204);
         cursor: pointer;
@@ -539,10 +454,6 @@
         align-items: center;
     }
     
-    .open_button {
-        display: none;
-    }
-    
     .teleg {
         color: 	rgb(0, 136, 204);
         cursor: pointer;
@@ -638,10 +549,6 @@
         display: flex;
         justify-content: center;
         align-items: center;
-    }
-    
-    .open_button {
-        display: none;
     }
     
     .teleg {
@@ -742,10 +649,6 @@
         align-items: center;
     }
     
-    .open_button {
-        display: none;
-    }
-    
     .teleg {
         color: 	rgb(0, 136, 204);
         cursor: pointer;
@@ -841,10 +744,6 @@
         display: flex;
         justify-content: center;
         align-items: center;
-    }
-    
-    .open_button {
-        display: none;
     }
     
     .teleg {
@@ -943,10 +842,6 @@
         display: flex;
         justify-content: center;
         align-items: center;
-    }
-    
-    .open_button {
-        display: none;
     }
     
     .teleg {

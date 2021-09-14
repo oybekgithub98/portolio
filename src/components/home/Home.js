@@ -1,16 +1,32 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Figure1 from '../animation/figure1/Figure1';
 import Figure2 from '../animation/figure2/Figure2';
 import TypingEffect from 'new-react-typing-effect';
 import homeImage from '../../assets/f934535398f235346dbe6466790a913f.jpg';
 // import { FaCog } from 'react-icons/fa';
 import { FiSun } from 'react-icons/fi';
+import { useStateValue } from '../../StateProvider';
 import './Home.css';
 
 const Home = () => {
+    const [dark, dispatch] = useStateValue();
+
+    const shareDarkMode = () => {
+        dispatch({
+            type: "SET_DARK",
+            dark: !dark.dark
+        })
+
+        if (localStorage.getItem('theme') === "light") {
+            localStorage.setItem('theme', "dark")
+        }
+        else {
+            localStorage.setItem('theme', "light")
+        }
+    }
 
     return (
-        <div className="home">
+        <div className={!dark.dark ? "home" : "homeLight"}>
             <div className="home_wrapper">
                 <Figure1 />
                 <div className="home_body">
@@ -75,7 +91,7 @@ const Home = () => {
             
             {/* theme */}
             <div className="theme">
-                <div className="icon">
+                <div className="icon" onClick={shareDarkMode}>
                     <FiSun style={{ fontSize: "33px" }} />
                 </div>
             </div>

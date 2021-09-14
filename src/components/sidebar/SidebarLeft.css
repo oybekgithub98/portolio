@@ -5,7 +5,7 @@
     left: 0;
     height: 100vh;
     width: 70px;
-    background-color: rgb(43, 44, 47);
+    background-color: rgb(7, 64, 233);
     transition: all 0.5s;
     z-index: 905;
 }
@@ -13,7 +13,16 @@
 
 /*RESPONSIVE*/
 @media screen and (max-width: 1200px){
-    
+    .sidebar {
+        position: fixed;
+        top: 75px;
+        left: 0;
+        height: 100vh;
+        width: 60px;
+        background-color: rgb(43, 44, 47);
+        transition: all 0.5s;
+        z-index: 905;
+    }
 }
 @media screen and (max-width: 1024px){
     .sidebar {

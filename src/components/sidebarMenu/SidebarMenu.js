@@ -6,11 +6,16 @@ import Services from '../../assets/services.png';
 import Portfolio from '../../assets/portfolio.png';
 import Contact from '../../assets/contact.png';
 import { BrowserRouter as Router, Link } from 'react-router-dom';
+import { useStateValue } from '../../StateProvider';
 
 const SidebarMenu = () => {
+
+    const [dark] = useStateValue();
+    console.log(dark) 
+
     return (
         <Router>
-            <div className="sidebar_menu" style={{zIndex: "90"}}>
+            <div className={!dark.dark ? "sidebar_menu" : "sidebar_menu_light"}>
                 <div className="sidebar_menu_wrapper">
                     <div className="menu">
                         <div className="menu_item_left" >
